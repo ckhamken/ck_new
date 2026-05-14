@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Stories — Chris Khamken</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/bss-overrides.css">
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css">
+    <link rel="stylesheet" href="assets/css/photography.css">
+    <link rel="stylesheet" href="assets/css/project-detail.css">
+    <link rel="stylesheet" href="assets/css/assets/css/travel-story.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <nav id="main-nav"><a href="/index.html" class="nav-logo">Chris <em>K.</em></a>
+        <div class="nav-center"><a href="/about.html">About</a><a href="/stories.html" class="active">Stories</a><a href="/photography.html">Photography</a><a href="/work.html">Work</a></div><a href="https://www.khamkendesigns.com" target="_blank" rel="noopener" class="nav-right">KDLLC ↗</a><button class="nav-hamburger" id="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+        <div id="nav-drawer" class="nav-drawer"><a href="/about.html">About</a><a href="/stories.html" class="active">Stories</a><a href="/photography.html">Photography</a><a href="/work.html">Work</a><a href="https://www.khamkendesigns.com" target="_blank" rel="noopener" class="nav-drawer-kdllc">KDLLC ↗</a></div>
+    </nav>
+    <main>
+        <div class="breadcrumb-bar">
+            <div class="breadcrumb-inner"><a href="index.html">Home</a><span class="sep">/</span><span class="current">Stories</span></div>
+        </div>
+        <section class="stories-map-hero">
+            <div id="stories-map"></div>
+            <div class="stories-map-overlay">
+                <div class="stories-map-text">
+                    <div class="stories-eyebrow"><span>Travel Stories</span></div>
+                    <h1 class="stories-page-title">Places, moments,<br><em>and the roads between.</em></h1>
+                </div>
+                <div class="stories-map-legend"><span class="sml-item"><span class="sml-dot sml-intl"></span>International</span><span class="sml-item"><span class="sml-dot sml-domestic"></span>Domestic</span><span class="sml-item"><span class="sml-dot sml-golf"></span>Golf</span></div>
+            </div>
+        </section>
+        <section class="stories-feed">
+            <div class="stories-feed-inner"><a href="stories/laos-story.html" class="story-feat">
+                    <div class="story-feat-fill" style="background-image:url('assets/img//Laos%202008/img_2004_2567254425_o.jpg');"></div>
+                    <div class="story-feat-overlay">
+                        <div class="story-feat-region"><span>Laos · Southeast Asia</span></div>
+                        <h2 class="story-feat-title">Laos: The Country My Family Left Behind</h2>
+                        <div class="story-feat-meta"><span>Photography · 14 min read · February 2008</span></div>
+                    </div>
+                </a><a href="stories/thailand-story.html" class="story-feat story-feat-thailand">
+                    <div class="story-feat-fill" style="background-image:url('assets/img//Thailand%202008/img_1844_2569933000_o.jpg');background-size:cover;background-position:center;"></div>
+                    <div class="story-feat-overlay">
+                        <div class="story-feat-region"><span>Thailand · Southeast Asia</span></div>
+                        <h2 class="story-feat-title">A Week in Thailand: Origins of My Grandmother</h2>
+                        <div class="story-feat-meta"><span>Photography · 11 min read · February 2008</span></div>
+                    </div>
+                </a><a href="stories/spain-story.html" class="story-feat story-feat-thailand">
+                    <div class="story-feat-fill" style="background:url('assets/img//Spain/the-alhambra3.jpg') center / cover;"></div>
+                    <div class="story-feat-overlay">
+                        <div class="story-feat-region"><span>Spain · Europe</span></div>
+                        <h2 class="story-feat-title">Two Weeks Across Spain: From Madrid to the Alhambra</h2>
+                        <div class="story-feat-meta"><span>Photography · 12 min read · Summer 2004</span></div>
+                    </div>
+                </a></div>
+        </section>
+    </main>
+    <footer class="footer-wrap">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <div class="footer-logo"><span>Chris </span><em>K.</em></div>
+                <p class="footer-tagline">Engineer · Maker · Traveler<br>Suwanee, Georgia</p>
+            </div>
+            <div class="footer-center-col">
+                <div class="footer-line"></div>
+                <div class="footer-copy"><span>© 2026 Chris Khamken</span></div>
+                <div class="footer-line"></div>
+            </div>
+            <div class="footer-right">
+                <nav class="footer-nav"><a href="about.html">About</a><a href="stories.html">Stories</a><a href="photography.html">Photography</a><a href="work.html">Work</a></nav>
+                <div class="footer-kdllc"><span>Looking for machining? </span><a href="https://www.khamkendesigns.com" target="_blank" rel="noopener">Visit khamkendesigns.com →</a></div>
+            </div>
+        </div>
+    </footer><script>
+(function() {
+  var script = document.createElement('script');
+  script.src = 'https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js';
+  script.onload = function() {
+
+    mapboxgl.accessToken = 'pk.eyJ1IjoiY2toYW1rZW4iLCJhIjoiWEtoSjVkYyJ9._sSGfN7arooZ9JFWs5OdTA';
+
+    const map = new mapboxgl.Map({
+      container: 'stories-map',
+      style: 'mapbox://styles/mapbox/dark-v11',
+      center: [-90, 25],
+      zoom: 3.0,
+      bearing: 0,
+      scrollZoom: false,
+      cooperativeGestures: true,
+      attributionControl: false
+    });
+
+    map.addControl(new mapboxgl.NavigationControl({ showCompass: false }), 'top-right');
+
+    var rotating = true;
+    var lastInteraction = 0;
+    var resumeDelay = 5000;
+
+    var currentLng = -90;
+    var currentLat = 25;
+
+    function rotateGlobe() {
+      if (rotating) {
+        currentLng -= 0.15;
+        if (currentLng < -180) currentLng += 360;
+        map.setCenter([currentLng, currentLat]);
+      }
+      requestAnimationFrame(rotateGlobe);
+    }
+
+    map.on('mousedown', function() {
+      rotating = false;
+      lastInteraction = Date.now();
+    });
+    map.on('touchstart', function() {
+      rotating = false;
+      lastInteraction = Date.now();
+    });
+    map.on('wheel', function() {
+      rotating = false;
+      lastInteraction = Date.now();
+    });
+
+    setInterval(function() {
+      if (!rotating && Date.now() - lastInteraction > resumeDelay) {
+        rotating = true;
+      }
+    }, 500);
+
+    map.on('load', function() {
+      rotateGlobe();
+    });
+
+    const domesticLocations = [
+      { name: 'George Bush Intercontinental Airport', lat: 29.9902, lng: -95.3368 },
+      { name: 'Chattanooga', lat: 35.0456, lng: -85.3097 },
+      { name: 'Montgomery', lat: 32.3668, lng: -86.3000 },
+      { name: 'Prattville', lat: 32.4640, lng: -86.4597 },
+      { name: 'Wetumpka', lat: 32.5437, lng: -86.2119 },
+      { name: 'Selma', lat: 32.4074, lng: -87.0211 },
+      { name: 'Tuskegee', lat: 32.4302, lng: -85.7077 },
+      { name: 'Auburn', lat: 32.6099, lng: -85.4808 },
+      { name: 'Opelika', lat: 32.6454, lng: -85.3783 },
+      { name: 'Columbus', lat: 32.4610, lng: -84.9877 },
+      { name: 'Atlanta', lat: 33.7490, lng: -84.3880 },
+      { name: 'Mobile', lat: 30.6944, lng: -88.0431 },
+      { name: 'Troy', lat: 31.8088, lng: -85.9700 },
+      { name: 'Destin', lat: 30.3935, lng: -86.4958 },
+      { name: 'Sandestin', lat: 30.3736, lng: -86.3307 },
+      { name: 'Pensacola', lat: 30.4213, lng: -87.2169 },
+      { name: 'Panama City Beach', lat: 30.1766, lng: -85.8055 },
+      { name: 'Niceville', lat: 30.5169, lng: -86.4822 },
+      { name: 'Jacksonville', lat: 30.3322, lng: -81.6557 },
+      { name: 'Tampa', lat: 27.9506, lng: -82.4572 },
+      { name: 'St Petersburg', lat: 27.7731, lng: -82.6400 },
+      { name: 'Clearwater', lat: 27.9659, lng: -82.8001 },
+      { name: 'Orlando', lat: 28.5383, lng: -81.3792 },
+      { name: 'Biloxi', lat: 30.3960, lng: -88.8853 },
+      { name: 'New Orleans', lat: 29.9511, lng: -90.0715 },
+      { name: 'Lafayette', lat: 30.2241, lng: -92.0198 },
+      { name: 'Jackson', lat: 32.2988, lng: -90.1848 },
+      { name: 'Memphis', lat: 35.1495, lng: -90.0490 },
+      { name: 'Hoover', lat: 33.4054, lng: -86.8114 },
+      { name: 'Birmingham', lat: 33.5207, lng: -86.8025 },
+      { name: 'Clanton', lat: 32.8387, lng: -86.6294 },
+      { name: 'Pine Level', lat: 32.5817, lng: -86.4666 },
+      { name: 'Huntsville', lat: 34.7304, lng: -86.5861 },
+      { name: 'Decatur', lat: 34.6059, lng: -86.9833 },
+      { name: 'Nashville', lat: 36.1667, lng: -86.7833 },
+      { name: 'Murfreesboro', lat: 35.8456, lng: -86.3903 },
+      { name: 'Knoxville', lat: 35.9606, lng: -83.9207 },
+      { name: 'Savannah', lat: 32.0835, lng: -81.0998 },
+      { name: 'Hinesville', lat: 31.8469, lng: -81.5959 },
+      { name: 'Port St Joe', lat: 29.8119, lng: -85.3030 },
+      { name: 'Little Rock', lat: 34.7465, lng: -92.2896 },
+      { name: 'Indianapolis', lat: 39.7684, lng: -86.1581 },
+      { name: 'Chicago', lat: 41.8781, lng: -87.6298 },
+      { name: 'Elgin', lat: 42.0372, lng: -88.2812 },
+      { name: 'Duluth', lat: 46.7867, lng: -92.1005 },
+      { name: 'Minneapolis', lat: 44.9833, lng: -93.2667 },
+      { name: 'St Louis', lat: 38.6270, lng: -90.1994 },
+      { name: 'Louisville', lat: 38.2527, lng: -85.7585 },
+      { name: 'New York', lat: 40.7144, lng: -74.0060 },
+      { name: 'New Haven', lat: 41.3083, lng: -72.9279 },
+      { name: 'New Brunswick', lat: 40.4862, lng: -74.4518 },
+      { name: 'Philadelphia', lat: 39.9523, lng: -75.1638 },
+      { name: 'Buffalo', lat: 42.8864, lng: -78.8784 },
+      { name: 'Washington', lat: 38.9072, lng: -77.0365 },
+      { name: 'Seattle', lat: 47.6062, lng: -122.3321 },
+      { name: 'Las Vegas', lat: 36.1146, lng: -115.1728 },
+      { name: 'Hoover Dam', lat: 36.0160, lng: -114.7375 },
+      { name: 'Grand Canyon', lat: 36.2317, lng: -113.0309 },
+      { name: 'Honolulu', lat: 21.3069, lng: -157.8583 },
+      { name: 'Diamond Head', lat: 21.2598, lng: -157.8117 },
+      { name: 'Holland', lat: 42.7875, lng: -86.1089 },
+      { name: 'Myrtle Beach', lat: 33.6891, lng: -78.8867 },
+      { name: 'St. Augustine', lat: 29.9012, lng: -81.3124 },
+      { name: 'Fort Walton Beach', lat: 30.4201, lng: -86.6170 },
+      { name: 'Salt Lake City', lat: 40.7608, lng: -111.8910 },
+      { name: 'Kansas City', lat: 39.0997, lng: -94.5786 },
+      { name: 'Reno', lat: 39.5296, lng: -119.8138 },
+      { name: 'North Lake Tahoe', lat: 39.2380, lng: -120.0315 },
+      { name: 'Phoenix', lat: 33.4484, lng: -112.0740 },
+      { name: 'Twin Falls', lat: 42.5558, lng: -114.4701 },
+      { name: 'Shoshone Falls Park', lat: 42.5937, lng: -114.4010 },
+      { name: 'Ogden', lat: 41.2230, lng: -111.9738 },
+      { name: 'Park City', lat: 40.6461, lng: -111.4980 },
+      { name: 'Bonneville Salt Flats', lat: 40.7787, lng: -113.8352 },
+      { name: 'Big Sur', lat: 36.2704, lng: -121.8080 },
+      { name: 'San Francisco', lat: 37.7749, lng: -122.4194 },
+      { name: 'Arches National Park', lat: 38.7331, lng: -109.5925 },
+      { name: 'Horseshoe Bend', lat: 36.8803, lng: -111.5196 },
+      { name: 'Antelope Canyon', lat: 36.9026, lng: -111.4111 },
+      { name: 'White Sands National Monument', lat: 32.7872, lng: -106.3257 },
+      { name: 'Austin', lat: 30.2672, lng: -97.7431 },
+      { name: 'Circuit of the Americas', lat: 30.1346, lng: -97.6359 },
+      { name: 'Kahului Airport', lat: 20.8946, lng: -156.4361 },
+      { name: 'Kaanapali', lat: 20.9359, lng: -156.6901 },
+      { name: 'Lahaina', lat: 20.8824, lng: -156.6816 },
+      { name: 'Hana', lat: 20.7557, lng: -155.9880 },
+      { name: 'Kalahaku Overlook', lat: 20.7369, lng: -156.2339 },
+    ];
+
+    const internationalLocations = [
+      { name: 'Monterrey', lat: 25.6866, lng: -100.3161 },
+      { name: 'Frankfurt', lat: 50.0379, lng: 8.5622 },
+      { name: 'Solingen', lat: 51.1702, lng: 7.0831 },
+      { name: 'Mt. Fuji', lat: 35.3606, lng: 138.7278 },
+      { name: 'Fujikawaguchiko', lat: 35.4973, lng: 138.7551 },
+      { name: 'Lisbon', lat: 38.7223, lng: -9.1393 },
+      { name: 'Vatican City', lat: 41.9029, lng: 12.4534 },
+      { name: 'Rome', lat: 41.8929, lng: 12.4825 },
+      { name: 'Venice', lat: 45.4408, lng: 12.3155 },
+      { name: 'Florence', lat: 43.7710, lng: 11.2480 },
+      { name: 'Madrid', lat: 40.4168, lng: -3.7038 },
+      { name: 'Córdoba', lat: 37.8882, lng: -4.7794 },
+      { name: 'Toledo', lat: 39.8628, lng: -4.0273 },
+      { name: 'Seville', lat: 37.3881, lng: -5.9823 },
+      { name: 'Mijas', lat: 36.5964, lng: -4.6360 },
+      { name: 'Granada', lat: 37.1773, lng: -3.5986 },
+      { name: 'London', lat: 51.5112, lng: -0.1198 },
+      { name: 'Amsterdam', lat: 52.3702, lng: 4.8952 },
+      { name: 'Munich', lat: 48.1351, lng: 11.5820 },
+      { name: 'Innsbruck', lat: 47.2692, lng: 11.4041 },
+      { name: 'Lucerne', lat: 47.0503, lng: 8.3156 },
+      { name: 'Paris', lat: 48.8566, lng: 2.3522 },
+      { name: 'Dover', lat: 51.1279, lng: 1.3134 },
+      { name: 'Berlin', lat: 52.5200, lng: 13.4050 },
+      { name: 'Vientiane', lat: 17.9628, lng: 102.6144 },
+      { name: 'Vang Vieng', lat: 18.9333, lng: 102.4500 },
+      { name: 'Savannakhet', lat: 16.5607, lng: 104.7470 },
+      { name: 'Nakhon Phanom', lat: 17.3920, lng: 104.7696 },
+      { name: 'Bangkok', lat: 13.6924, lng: 100.7509 },
+      { name: 'Tokyo', lat: 35.6895, lng: 139.6917 },
+      { name: 'Kyoto', lat: 35.0116, lng: 135.7680 },
+      { name: 'Osaka', lat: 34.7907, lng: 135.4413 },
+      { name: 'Okinawa', lat: 26.2123, lng: 127.6792 },
+      { name: 'Sydney', lat: -33.8675, lng: 151.2070 },
+      { name: 'Canberra', lat: -35.2820, lng: 149.1287 },
+      { name: 'Melbourne', lat: -37.8141, lng: 144.9633 },
+      { name: 'Christchurch', lat: -43.5321, lng: 172.6362 },
+      { name: 'Fox Glacier', lat: -43.4645, lng: 170.0176 },
+      { name: 'Queenstown', lat: -45.0312, lng: 168.6626 },
+      { name: 'Milford Sound', lat: -44.6716, lng: 167.9256 },
+      { name: 'Rotorua', lat: -38.1753, lng: 176.3377 },
+      { name: 'Hobbiton', lat: -37.8573, lng: 175.6804 },
+      { name: 'Auckland', lat: -36.8485, lng: 174.7633 },
+      { name: 'Havana', lat: 23.1136, lng: -82.3666 },
+      { name: 'Vinales', lat: 22.6188, lng: -83.7066 },
+      { name: 'Cancún', lat: 21.1619, lng: -86.8515 },
+      { name: 'Toronto', lat: 43.6532, lng: -79.3832 },
+    ];
+
+    const golfLocations = [
+      { name: 'Robert Trent Jones Trail', lat: 32.6876, lng: -85.4353 },
+      { name: 'Capitol Hill Golf', lat: 32.4431, lng: -86.3949 },
+      { name: 'Cambrian Ridge', lat: 31.8977, lng: -86.6862 },
+      { name: 'Eglin Golf Course', lat: 30.5277, lng: -86.4911 },
+      { name: 'Kelly Plantation Golf Club', lat: 30.3999, lng: -86.4380 },
+      { name: 'Copperhead Course', lat: 28.1158, lng: -82.7504 },
+      { name: 'Dunedin Golf Club', lat: 28.0424, lng: -82.7771 },
+      { name: 'Eagles Landing Country Club', lat: 33.5092, lng: -84.2155 },
+      { name: 'East Lake Golf Club', lat: 33.7434, lng: -84.3028 },
+      { name: 'Stone Mountain Golf Club', lat: 33.8122, lng: -84.1300 },
+      { name: 'Chastain Park Golf Course', lat: 33.8742, lng: -84.3927 },
+      { name: 'Lagoon Park Golf Course', lat: 32.4007, lng: -86.2218 },
+      { name: 'World Golf Hall of Fame', lat: 29.9913, lng: -81.4703 },
+      { name: 'King & Bear Golf Course', lat: 29.9602, lng: -81.5195 },
+      { name: 'World Tour Golf Links', lat: 33.7373, lng: -78.9093 },
+      { name: 'TPC Myrtle Beach', lat: 33.5849, lng: -79.0643 },
+      { name: 'The Preserve Golf Club', lat: 30.4717, lng: -88.7328 },
+      { name: 'The Golf Club Fossil Creek', lat: 32.8555, lng: -97.2997 },
+      { name: 'Cowboys Golf Club', lat: 32.9551, lng: -97.0540 },
+      { name: 'Sycamore Ridge Golf Course', lat: 38.7587, lng: -94.8398 },
+      { name: 'Braemar Golf Course', lat: 44.8671, lng: -93.3829 },
+      { name: 'The Revere Golf Club', lat: 35.9551, lng: -115.1022 },
+      { name: 'Bali Hai Golf Club', lat: 36.0830, lng: -115.1756 },
+      { name: 'Shadow Creek Golf Course', lat: 36.2584, lng: -115.1073 },
+      { name: 'TalonsCove Golf Club', lat: 40.3214, lng: -111.9013 },
+      { name: 'Apache Mesa Golf Course', lat: 32.8275, lng: -106.0855 },
+      { name: 'CasaBlanca Golf Club', lat: 36.7960, lng: -114.1091 },
+      { name: 'Augusta National Golf Club', lat: 33.5021, lng: -82.0226 },
+      { name: "Bear's Best Atlanta", lat: 34.0888, lng: -84.0990 },
+      { name: 'Hamilton Mill Golf Club', lat: 34.0593, lng: -83.9131 },
+      { name: 'Reunion Country Club', lat: 34.1132, lng: -83.8626 },
+      { name: 'Country Club of Gwinnett', lat: 33.8218, lng: -84.0248 },
+      { name: 'RTJ at Silver Lakes', lat: 33.8849, lng: -85.9217 },
+      { name: 'Emerald Mountain Golf Club', lat: 32.4476, lng: -86.1042 },
+    ];
+
+    function addDots(locations, color) {
+      locations.forEach(function(loc) {
+        var el = document.createElement('div');
+        el.style.cssText = 'width:7px;height:7px;border-radius:50%;background:' + color + ';opacity:0.85;cursor:pointer;';
+        var popup = new mapboxgl.Popup({
+          closeButton: false,
+          closeOnClick: false,
+          offset: 10,
+          className: 'map-tooltip'
+        }).setText(loc.name);
+        var marker = new mapboxgl.Marker({ element: el })
+          .setLngLat([loc.lng, loc.lat])
+          .setPopup(popup)
+          .addTo(map);
+        el.addEventListener('mouseenter', function() { marker.getPopup().addTo(map); });
+        el.addEventListener('mouseleave', function() { marker.getPopup().remove(); });
+      });
+    }
+
+    map.on('load', function() {
+      addDots(domesticLocations, '#7eb8c9');
+      addDots(internationalLocations, '#c8754a');
+      addDots(golfLocations, '#7ec98a');
+    });
+
+  };
+  document.head.appendChild(script);
+})();
+    </script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/photography.js"></script>
+    <script src="assets/js/project-detail.js"></script>
+    <script src="assets/js/nav.js"></script>
+</body>
+
+</html>

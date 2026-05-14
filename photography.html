@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html data-bs-theme="light">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Photography - Chris Khamken</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/bss-overrides.css">
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css">
+    <link rel="stylesheet" href="assets/css/photography.css">
+    <link rel="stylesheet" href="assets/css/project-detail.css">
+    <link rel="stylesheet" href="assets/css/assets/css/travel-story.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <nav id="main-nav"><a href="/index.html" class="nav-logo">Chris <em>K.</em></a>
+        <div class="nav-center"><a href="/about.html">About</a><a href="/stories.html">Stories</a><a href="/photography.html">Photography</a><a href="/work.html">Work</a></div><a href="https://www.khamkendesigns.com" target="_blank" rel="noopener" class="nav-right">KDLLC ↗</a><button class="nav-hamburger" id="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+        <div id="nav-drawer" class="nav-drawer"><a href="/about.html">About</a><a href="/stories.html">Stories</a><a href="/photography.html">Photography</a><a href="/work.html">Work</a><a href="https://www.khamkendesigns.com" target="_blank" rel="noopener" class="nav-drawer-kdllc">KDLLC ↗</a></div>
+    </nav>
+    <section id="photo-hero" class="photo-hero">
+        <div class="hero-slide active" data-title="Moth" data-meta="Nature · 2011"><img src="assets/img/photography/moth.jpg" alt="Moth"></div>
+        <div class="hero-slide" data-title="Eiffel Tower" data-meta="Travel · Paris, 2012"><img src="assets/img/photography/alps-summit.jpg" alt="Eiffel Tower"></div>
+        <div class="hero-slide" data-title="Lake Hawea" data-meta="Landscapes · New Zealand, 2014"><img src="assets/img/photography/lake-hawea.jpg" alt="Lake Hawea"></div>
+        <div class="hero-slide" data-title="Fiordland" data-meta="Landscapes · New Zealand, 2014"><img src="assets/img/photography/fiordland.jpg" alt="Fiordland"></div>
+        <div class="hero-slide" data-title="Mt Fuji" data-meta="Landscapes · Japan, 2015"><img src="assets/img/photography/mt-fuji.jpg" alt="Mt Fuji"></div>
+        <div class="hero-slide" data-title="Rise &amp; Shine" data-meta="Landscapes · Mt Fuji, 2015"><img src="assets/img/photography/rise-and-shine.jpg" alt="Rise and Shine"></div>
+        <div class="hero-text-overlay">
+            <div class="hero-overlay-left">
+                <div class="hero-page-eyebrow"><span>Photography</span></div>
+                <h1 class="hero-page-title">Through<span class="hero-title-em">the lens</span></h1>
+            </div>
+            <div class="hero-overlay-right">
+                <div id="hero-photo-title" class="hero-photo-title"><span>Moth</span></div>
+                <div id="hero-photo-meta" class="hero-photo-meta"><span>Nature · 2011</span></div>
+            </div>
+        </div>
+        <div id="hero-dots" class="hero-dots">
+            <div class="hero-dot active" data-idx="0"></div>
+            <div class="hero-dot" data-idx="1"></div>
+            <div class="hero-dot" data-idx="2"></div>
+            <div class="hero-dot" data-idx="3"></div>
+            <div class="hero-dot" data-idx="4"></div>
+            <div class="hero-dot" data-idx="5"></div>
+        </div>
+    </section>
+    <div id="filter-bar" class="filter-bar">
+        <div class="filter-inner"><button class="active filter-tab" data-filter="all">All</button><button class="filter-tab" data-filter="landscapes">Landscapes</button><button class="filter-tab" data-filter="travel">Travel</button><button class="filter-tab" data-filter="nature">Nature</button><button class="filter-tab" data-filter="people">People</button><button class="filter-tab" data-filter="local">Local</button></div>
+    </div>
+    <main id="masonry-section" class="masonry-section">
+        <div id="masonry-grid" class="masonry-grid">
+            <div class="photo-card" data-category="nature" data-title="Spot of Wheat Grass" data-meta="Nature · 2007"><img src="assets/img/photography/spot-of-wheat-grass.jpg" alt="Spot of Wheat Grass" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Spot of Wheat Grass</span></div>
+                    <div class="photo-card-meta"><span>Nature · 2007</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="people" data-title="Laotian Youth" data-meta="People · Laos, 2008"><img src="assets/img/photography/laotian-youth.jpg" alt="Laotian Youth" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Laotian Youth</span></div>
+                    <div class="photo-card-meta"><span>People · Laos, 2008</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="nature" data-title="Muse" data-meta="Nature · 2008"><img src="assets/img/photography/muse.jpg" alt="Muse" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Muse</span></div>
+                    <div class="photo-card-meta"><span>Nature · 2008</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="local" data-title="Detour" data-meta="Local · 2009"><img src="assets/img/photography/detour.jpg" alt="Detour" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Detour</span></div>
+                    <div class="photo-card-meta"><span>Local · 2009</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="local" data-title="Backroads" data-meta="Local · 2009"><img src="assets/img/photography/backroads.jpg" alt="Backroads" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Backroads</span></div>
+                    <div class="photo-card-meta"><span>Local · 2009</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="local" data-title="Summer Serene" data-meta="Landscapes · Local, 2009"><img src="assets/img/photography/summer-serene.jpg" alt="Summer Serene" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Summer Serene</span></div>
+                    <div class="photo-card-meta"><span>Landscapes · Local, 2009</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="nature" data-title="Yearning" data-meta="Nature · 2009"><img src="assets/img/photography/yearning.jpg" alt="Yearning" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Yearning</span></div>
+                    <div class="photo-card-meta"><span>Nature · 2009</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="nature" data-title="Plucked" data-meta="Nature · 2009"><img src="assets/img/photography/plucked.jpg" alt="Plucked" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Plucked</span></div>
+                    <div class="photo-card-meta"><span>Nature · 2009</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="local" data-title="Museum of Fine Arts" data-meta="Local · Boston, 2009"><img src="assets/img/photography/museum-of-fine-arts.jpg" alt="Museum of Fine Arts" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Museum of Fine Arts</span></div>
+                    <div class="photo-card-meta"><span>Local · Boston, 2009</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="nature" data-title="Hello Neighbor" data-meta="Nature · 2010"><img src="assets/img/photography/hello-neighbor.jpg" alt="Hello Neighbor" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Hello Neighbor</span></div>
+                    <div class="photo-card-meta"><span>Nature · 2010</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="people" data-title="Mirror Self" data-meta="People · 2010"><img src="assets/img/photography/mirror-self.jpg" alt="Mirror Self" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Mirror Self</span></div>
+                    <div class="photo-card-meta"><span>People · 2010</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="nature" data-title="Bugging Me" data-meta="Nature · 2010"><img src="assets/img/photography/bugging-me.jpg" alt="Bugging Me" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Bugging Me</span></div>
+                    <div class="photo-card-meta"><span>Nature · 2010</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="nature" data-title="Essence" data-meta="Nature · 2010"><img src="assets/img/photography/essence.jpg" alt="Essence" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Essence</span></div>
+                    <div class="photo-card-meta"><span>Nature · 2010</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="nature" data-title="Sunday" data-meta="Nature · 2010"><img src="assets/img/photography/sunday.jpg" alt="Sunday" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Sunday</span></div>
+                    <div class="photo-card-meta"><span>Nature · 2010</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="nature" data-title="Moth" data-meta="Nature · 2011"><img src="assets/img/photography/moth.jpg" alt="Moth" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Moth</span></div>
+                    <div class="photo-card-meta"><span>Nature · 2011</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="nature" data-title="Weary" data-meta="Nature · 2011"><img src="assets/img/photography/weary.jpg" alt="Weary" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Weary</span></div>
+                    <div class="photo-card-meta"><span>Nature · 2011</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="local" data-title="Radiance" data-meta="Landscapes · Local, 2011"><img src="assets/img/photography/radiance.jpg" alt="Radiance" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Radiance</span></div>
+                    <div class="photo-card-meta"><span>Landscapes · Local, 2011</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="nature" data-title="Momentary" data-meta="Nature · 2011"><img src="assets/img/photography/momentary.jpg" alt="Momentary" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Momentary</span></div>
+                    <div class="photo-card-meta"><span>Nature · 2011</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="travel" data-title="Kyoto" data-meta="Travel · Japan, 2012"><img src="assets/img/photography/kyoto.jpg" alt="Kyoto" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Kyoto</span></div>
+                    <div class="photo-card-meta"><span>Travel · Japan, 2012</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="travel" data-title="Spartan Helmet" data-meta="Travel · 2012"><img src="assets/img/photography/spartan-helmet.jpg" alt="Spartan Helmet" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Spartan Helmet</span></div>
+                    <div class="photo-card-meta"><span>Travel · 2012</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="travel" data-title="Tokyo Street" data-meta="Travel · Japan, 2012"><img src="assets/img/photography/tokyo-street.jpg" alt="Tokyo Street" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Tokyo Street</span></div>
+                    <div class="photo-card-meta"><span>Travel · Japan, 2012</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="travel" data-title="Tokyo Alley" data-meta="Travel · Japan, 2012"><img src="assets/img/photography/tokyo-alley.jpg" alt="Tokyo Alley" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Tokyo Alley</span></div>
+                    <div class="photo-card-meta"><span>Travel · Japan, 2012</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="travel" data-title="Alps Summit" data-meta="Travel · Switzerland, 2012"><img src="assets/img/photography/alps-summit.jpg" alt="Alps Summit" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Alps Summit</span></div>
+                    <div class="photo-card-meta"><span>Travel · Switzerland, 2012</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="travel" data-title="Eiffel Tower" data-meta="Travel · Paris, 2012"><img src="assets/img/photography/eiffel-tower.jpg" alt="Eiffel Tower" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Eiffel Tower</span></div>
+                    <div class="photo-card-meta"><span>Travel · Paris, 2012</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="travel" data-title="Eiffel Tower at Night" data-meta="Travel · Paris, 2012"><img src="assets/img/photography/eiffel-tower-2.jpg" alt="Eiffel Tower at Night" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Eiffel Tower at Night</span></div>
+                    <div class="photo-card-meta"><span>Travel · Paris, 2012</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="travel" data-title="London Eye" data-meta="Travel · London, 2012"><img src="assets/img/photography/london-eye.jpg" alt="London Eye" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>London Eye</span></div>
+                    <div class="photo-card-meta"><span>Travel · London, 2012</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="travel" data-title="Midnight Preserve" data-meta="Travel · Paris, 2012"><img src="assets/img/photography/midnight-preserve.jpg" alt="Midnight Preserve" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Midnight Preserve</span></div>
+                    <div class="photo-card-meta"><span>Travel · Paris, 2012</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="travel" data-title="Colosseum" data-meta="Travel · Rome, 2012"><img src="assets/img/photography/colosseum.jpg" alt="Colosseum" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Colosseum</span></div>
+                    <div class="photo-card-meta"><span>Travel · Rome, 2012</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="travel" data-title="Trajan's Forum" data-meta="Travel · Rome, 2012"><img src="assets/img/photography/trajans-forum.jpg" alt="Trajan's Forum" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Trajan's Forum</span></div>
+                    <div class="photo-card-meta"><span>Travel · Rome, 2012</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="travel" data-title="Morning Square" data-meta="Travel · Rome, 2012"><img src="assets/img/photography/morning-square.jpg" alt="Morning Square" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Morning Square</span></div>
+                    <div class="photo-card-meta"><span>Travel · Rome, 2012</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="travel" data-title="Trevi Fountain" data-meta="Travel · Rome, 2012"><img src="assets/img/photography/trevi-fountain.jpg" alt="Trevi Fountain" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Trevi Fountain</span></div>
+                    <div class="photo-card-meta"><span>Travel · Rome, 2012</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="travel" data-title="Venice" data-meta="Travel · Venice, 2012"><img src="assets/img/photography/venice.jpg" alt="Venice" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Venice</span></div>
+                    <div class="photo-card-meta"><span>Travel · Venice, 2012</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="local" data-title="Savannah Square" data-meta="Local · Savannah, 2013"><img src="assets/img/photography/savannah-square.jpg" alt="Savannah Square" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Savannah Square</span></div>
+                    <div class="photo-card-meta"><span>Local · Savannah, 2013</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="travel" data-title="Cave Grottoes" data-meta="Travel · Okinawa, 2013"><img src="assets/img/photography/cave-grottoes.jpg" alt="Cave Grottoes" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Cave Grottoes</span></div>
+                    <div class="photo-card-meta"><span>Travel · Okinawa, 2013</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="travel" data-title="Night Train" data-meta="Travel · New Zealand, 2014"><img src="assets/img/photography/night-train.jpg" alt="Night Train" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Night Train</span></div>
+                    <div class="photo-card-meta"><span>Travel · New Zealand, 2014</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="landscapes" data-title="Lake Hawea" data-meta="Landscapes · New Zealand, 2014"><img src="assets/img/photography/lake-hawea.jpg" alt="Lake Hawea" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Lake Hawea</span></div>
+                    <div class="photo-card-meta"><span>Landscapes · New Zealand, 2014</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="landscapes" data-title="Fiordland" data-meta="Landscapes · New Zealand, 2014"><img src="assets/img/photography/fiordland.jpg" alt="Fiordland" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Fiordland</span></div>
+                    <div class="photo-card-meta"><span>Landscapes · New Zealand, 2014</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="people" data-title="Milford Sound Boat" data-meta="People · New Zealand, 2014"><img src="assets/img/photography/milford-sound-boat.jpg" alt="Milford Sound Boat" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Milford Sound Boat</span></div>
+                    <div class="photo-card-meta"><span>People · New Zealand, 2014</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="landscapes" data-title="Milford Falls" data-meta="Landscapes · New Zealand, 2014"><img src="assets/img/photography/milford-falls.jpg" alt="Milford Falls" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Milford Falls</span></div>
+                    <div class="photo-card-meta"><span>Landscapes · New Zealand, 2014</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="landscapes" data-title="Lake Wakatipu" data-meta="Landscapes · New Zealand, 2014"><img src="assets/img/photography/lake-wakatipu.jpg" alt="Lake Wakatipu" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Lake Wakatipu</span></div>
+                    <div class="photo-card-meta"><span>Landscapes · New Zealand, 2014</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="landscapes" data-title="Milford Sound" data-meta="Landscapes · New Zealand, 2014"><img src="assets/img/photography/milford-sound.jpg" alt="Milford Sound" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Milford Sound</span></div>
+                    <div class="photo-card-meta"><span>Landscapes · New Zealand, 2014</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="landscapes" data-title="Mirror Lakes" data-meta="Landscapes · New Zealand, 2014"><img src="assets/img/photography/mirror-lakes.jpg" alt="Mirror Lakes" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Mirror Lakes</span></div>
+                    <div class="photo-card-meta"><span>Landscapes · New Zealand, 2014</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="people" data-title="Zakimi Castle" data-meta="People · Okinawa, 2014"><img src="assets/img/photography/zakimi-castle.jpg" alt="Zakimi Castle" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Zakimi Castle</span></div>
+                    <div class="photo-card-meta"><span>People · Okinawa, 2014</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="people" data-title="Okinawa Path" data-meta="People · Okinawa, 2014"><img src="assets/img/photography/okinawa-path.jpg" alt="Okinawa Path" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Okinawa Path</span></div>
+                    <div class="photo-card-meta"><span>People · Okinawa, 2014</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="nature" data-title="Kittens" data-meta="Nature · Okinawa, 2014"><img src="assets/img/photography/kittens.jpg" alt="Kittens" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Kittens</span></div>
+                    <div class="photo-card-meta"><span>Nature · Okinawa, 2014</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="travel" data-title="Zanpa Lighthouse" data-meta="Travel · Okinawa, 2014"><img src="assets/img/photography/zanpa-lighthouse.jpg" alt="Zanpa Lighthouse" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Zanpa Lighthouse</span></div>
+                    <div class="photo-card-meta"><span>Travel · Okinawa, 2014</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="travel" data-title="Zampa Beach" data-meta="Travel · Okinawa, 2014"><img src="assets/img/photography/zampa-beach.jpg" alt="Zampa Beach" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Zampa Beach</span></div>
+                    <div class="photo-card-meta"><span>Travel · Okinawa, 2014</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="travel" data-title="Hobbiton" data-meta="Travel · New Zealand, 2014"><img src="assets/img/photography/hobbiton.jpg" alt="Hobbiton" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Hobbiton</span></div>
+                    <div class="photo-card-meta"><span>Travel · New Zealand, 2014</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="travel" data-title="Royal Botanic Gardens" data-meta="Travel · Melbourne, 2014"><img src="assets/img/photography/royal-botanic-gardens.jpg" alt="Royal Botanic Gardens" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Royal Botanic Gardens</span></div>
+                    <div class="photo-card-meta"><span>Travel · Melbourne, 2014</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="travel" data-title="Fairy Tale Castle" data-meta="Travel · Europe, 2014"><img src="assets/img/photography/fairy-tale-castle.jpg" alt="Fairy Tale Castle" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Fairy Tale Castle</span></div>
+                    <div class="photo-card-meta"><span>Travel · Europe, 2014</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="local" data-title="Post Storm" data-meta="Local · 2014"><img src="assets/img/photography/post-storm.jpg" alt="Post Storm" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Post Storm</span></div>
+                    <div class="photo-card-meta"><span>Local · 2014</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="local" data-title="Shack" data-meta="Local · 2014"><img src="assets/img/photography/shack.jpg" alt="Shack" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Shack</span></div>
+                    <div class="photo-card-meta"><span>Local · 2014</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="local" data-title="Rainy Shack" data-meta="Local · 2014"><img src="assets/img/photography/rainy-shack.jpg" alt="Rainy Shack" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Rainy Shack</span></div>
+                    <div class="photo-card-meta"><span>Local · 2014</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="people" data-title="Fuji Descent" data-meta="People · Japan, 2015"><img src="assets/img/photography/fuji-descent.jpg" alt="Fuji Descent" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Fuji Descent</span></div>
+                    <div class="photo-card-meta"><span>People · Japan, 2015</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="landscapes" data-title="GoPro Mt. Fuji" data-meta="Landscapes · Japan, 2015"><img src="assets/img/photography/gopro-mt-fuji.jpg" alt="GoPro Mt. Fuji" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>GoPro Mt. Fuji</span></div>
+                    <div class="photo-card-meta"><span>Landscapes · Japan, 2015</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="landscapes" data-title="Mt. Fuji" data-meta="Landscapes · Japan, 2015"><img src="assets/img/photography/mt-fuji.jpg" alt="Mt. Fuji" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Mt. Fuji</span></div>
+                    <div class="photo-card-meta"><span>Landscapes · Japan, 2015</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="landscapes" data-title="Mt. Fuji at Dusk" data-meta="Landscapes · Japan, 2015"><img src="assets/img/photography/mt-fuji-2.jpg" alt="Mt. Fuji at Dusk" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Mt. Fuji at Dusk</span></div>
+                    <div class="photo-card-meta"><span>Landscapes · Japan, 2015</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="people" data-title="Summit Selfie" data-meta="People · Mt. Fuji, 2015"><img src="assets/img/photography/summit-selfie.jpg" alt="Summit Selfie" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Summit Selfie</span></div>
+                    <div class="photo-card-meta"><span>People · Mt. Fuji, 2015</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="landscapes" data-title="Rise &amp; Shine" data-meta="Landscapes · Mt. Fuji, 2015"><img src="assets/img/photography/rise-and-shine.jpg" alt="Rise and Shine" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Rise &amp; Shine</span></div>
+                    <div class="photo-card-meta"><span>Landscapes · Mt. Fuji, 2015</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="travel" data-title="Bangkok Airport" data-meta="Travel · Bangkok, 2008"><img src="assets/img/photography/bangkok-airport.jpg" alt="Bangkok Airport" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Bangkok Airport</span></div>
+                    <div class="photo-card-meta"><span>Travel · Bangkok, 2008</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="travel" data-title="Las Vegas Fountain" data-meta="Travel · Las Vegas, 2012"><img src="assets/img/photography/las-vegas-fountain.jpg" alt="Las Vegas Fountain" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Las Vegas Fountain</span></div>
+                    <div class="photo-card-meta"><span>Travel · Las Vegas, 2012</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="people" data-title="New Orleans Wedding" data-meta="People · New Orleans, 2013"><img src="assets/img/photography/new-orleans-wedding.jpg" alt="New Orleans Wedding" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>New Orleans Wedding</span></div>
+                    <div class="photo-card-meta"><span>People · New Orleans, 2013</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="travel" data-title="Hobbiton Mill" data-meta="Travel · New Zealand, 2014"><img src="assets/img/photography/hobbiton-mill.jpg" alt="Hobbiton Mill" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Hobbiton Mill</span></div>
+                    <div class="photo-card-meta"><span>Travel · New Zealand, 2014</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="people" data-title="Self Portrait" data-meta="People · Okinawa, 2014"><img src="assets/img/photography/self-japan.jpg" alt="Self Portrait" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Self Portrait</span></div>
+                    <div class="photo-card-meta"><span>People · Okinawa, 2014</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="travel" data-title="Aussie Road Trip" data-meta="Travel · Australia, 2014"><img src="assets/img/photography/aussie-roadtrip.jpg" alt="Aussie Road Trip" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Aussie Road Trip</span></div>
+                    <div class="photo-card-meta"><span>Travel · Australia, 2014</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="travel" data-title="Havana Architecture" data-meta="Travel · Havana, 2017"><img src="assets/img/photography/havana-architecture.jpg" alt="Havana Architecture" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Havana Architecture</span></div>
+                    <div class="photo-card-meta"><span>Travel · Havana, 2017</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="landscapes" data-title="Havana Malecón" data-meta="Landscapes · Havana, 2017"><img src="assets/img/photography/havana-malecon.jpg" alt="Havana Malecon" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Havana Malecón</span></div>
+                    <div class="photo-card-meta"><span>Landscapes · Havana, 2017</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="travel" data-title="Havana Street" data-meta="Travel · Havana, 2017"><img src="assets/img/photography/havana-street.jpg" alt="Havana Street" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Havana Street</span></div>
+                    <div class="photo-card-meta"><span>Travel · Havana, 2017</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="local" data-title="Balloon Glow" data-meta="Local · Atlanta, 2018"><img src="assets/img/photography/balloon-glow.jpg" alt="Balloon Glow" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Balloon Glow</span></div>
+                    <div class="photo-card-meta"><span>Local · Atlanta, 2018</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="local" data-title="Balloon Liftoff" data-meta="Local · Atlanta, 2018"><img src="assets/img/photography/balloon-liftoff.jpg" alt="Balloon Liftoff" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Balloon Liftoff</span></div>
+                    <div class="photo-card-meta"><span>Local · Atlanta, 2018</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="local" data-title="Balloon Festival" data-meta="Local · Atlanta, 2018"><img src="assets/img/photography/balloon-festival.jpg" alt="Balloon Festival" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Balloon Festival</span></div>
+                    <div class="photo-card-meta"><span>Local · Atlanta, 2018</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="nature" data-title="Golden Hour Dog" data-meta="Nature · Local, 2019"><img src="assets/img/photography/golden-hour-dog.jpg" alt="Golden Hour Dog" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Golden Hour Dog</span></div>
+                    <div class="photo-card-meta"><span>Nature · Local, 2019</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="nature" data-title="Dog Repose" data-meta="Nature · Local, 2019"><img src="assets/img/photography/dog-repose.jpg" alt="Dog Repose" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Dog Repose</span></div>
+                    <div class="photo-card-meta"><span>Nature · Local, 2019</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="local" data-title="Stone Mountain Golf" data-meta="Local · Stone Mountain, 2019"><img src="assets/img/photography/stone-mountain-golf.jpg" alt="Stone Mountain Golf" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Stone Mountain Golf</span></div>
+                    <div class="photo-card-meta"><span>Local · Stone Mountain, 2019</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="local" data-title="Port St. Joe Beach" data-meta="Local · Florida, 2020"><img src="assets/img/photography/port-st-joe-beach.jpg" alt="Port St. Joe Beach" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Port St. Joe Beach</span></div>
+                    <div class="photo-card-meta"><span>Local · Florida, 2020</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="landscapes" data-title="Diamond Head" data-meta="Landscapes · Hawaii, 2021"><img src="assets/img/photography/diamond-head.jpg" alt="Diamond Head" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Diamond Head</span></div>
+                    <div class="photo-card-meta"><span>Landscapes · Hawaii, 2021</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="landscapes" data-title="Monument Valley" data-meta="Landscapes · Utah, 2022"><img src="assets/img/photography/monument-valley.jpg" alt="Monument Valley" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Monument Valley</span></div>
+                    <div class="photo-card-meta"><span>Landscapes · Utah, 2022</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="landscapes" data-title="Horseshoe Bend" data-meta="Landscapes · Arizona, 2022"><img src="assets/img/photography/horseshoe-bend.jpg" alt="Horseshoe Bend" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Horseshoe Bend</span></div>
+                    <div class="photo-card-meta"><span>Landscapes · Arizona, 2022</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="landscapes" data-title="White Sands" data-meta="Landscapes · New Mexico, 2022"><img src="assets/img/photography/white-sands.jpg" alt="White Sands" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>White Sands</span></div>
+                    <div class="photo-card-meta"><span>Landscapes · New Mexico, 2022</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="landscapes" data-title="White Sands at Dusk" data-meta="Landscapes · New Mexico, 2022"><img src="assets/img/photography/white-sands-dusk.jpg" alt="White Sands at Dusk" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>White Sands at Dusk</span></div>
+                    <div class="photo-card-meta"><span>Landscapes · New Mexico, 2022</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="landscapes" data-title="Arizona Golf" data-meta="Landscapes · Arizona, 2022"><img src="assets/img/photography/arizona-golf.jpg" alt="Arizona Golf" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Arizona Golf</span></div>
+                    <div class="photo-card-meta"><span>Landscapes · Arizona, 2022</span></div>
+                </div>
+            </div>
+            <div class="photo-card" data-category="landscapes" data-title="Big Sur" data-meta="Landscapes · California, 2023"><img src="assets/img/photography/big-sur.jpg" alt="Big Sur" loading="lazy">
+                <div class="photo-card-overlay">
+                    <div class="photo-card-title"><span>Big Sur</span></div>
+                    <div class="photo-card-meta"><span>Landscapes · California, 2023</span></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="lightbox" class="lightbox" aria-hidden="true"><button class="lb-close" id="lb-close" aria-label="Close">✕</button><button class="lb-prev" id="lb-prev" aria-label="Previous">‹</button><button class="lb-next" id="lb-next" aria-label="Next">›</button>
+        <div class="lb-img-wrap"><img id="lb-img" src="" alt=""></div>
+        <div class="lb-caption">
+            <div id="lb-title" class="lb-title"></div>
+            <div id="lb-meta" class="lb-meta"></div>
+        </div>
+    </div>
+    <footer class="footer-wrap">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <div class="footer-logo"><span>Chris </span><em>K.</em></div>
+                <p class="footer-tagline">Engineer · Maker · Traveler<br>Suwanee, Georgia</p>
+            </div>
+            <div class="footer-center-col">
+                <div class="footer-line"></div>
+                <div class="footer-copy"><span>© 2026 Chris Khamken</span></div>
+                <div class="footer-line"></div>
+            </div>
+            <div class="footer-right">
+                <nav class="footer-nav"><a href="about.html">About</a><a href="stories.html">Stories</a><a href="photography.html">Photography</a><a href="work.html">Work</a></nav>
+                <div class="footer-kdllc"><span>Looking for machining? </span><a href="https://www.khamkendesigns.com" target="_blank" rel="noopener">Visit khamkendesigns.com →</a></div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/photography.js"></script>
+    <script src="assets/js/project-detail.js"></script>
+    <script src="assets/js/nav.js"></script>
+</body>
+
+</html>
